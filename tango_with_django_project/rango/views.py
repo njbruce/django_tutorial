@@ -8,10 +8,10 @@ from django.http import HttpResponse
 #    return HttpResponse("""Rango says hey there world! 
 #        <br/>See the <a href='/rango/about'>About</a> page.""")
 
-def about(request):
-    return HttpResponse("""Rango says here is the about page.
-        <br/> To go back to the index page 
-        click <a href='/rango/'>here</a>.""")
+#def about(request):
+#    return HttpResponse("""Rango says here is the about page.
+#        <br/> To go back to the index page 
+#        click <a href='/rango/'>here</a>.""")
 
 # New index view using template
 def index(request):
@@ -25,3 +25,11 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
 
     return render(request, 'rango/index.html', context_dict)
+
+
+def about(request):
+
+    context_dict = {'boldmessage': "Rango"}
+    return render(request, 'rango/about.html', context_dict)
+
+
