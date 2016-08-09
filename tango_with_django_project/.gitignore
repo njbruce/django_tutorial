@@ -1,4 +1,4 @@
 *.pyc
 **/*.pyc
-db.*
+db.sqlite3
 *.project
