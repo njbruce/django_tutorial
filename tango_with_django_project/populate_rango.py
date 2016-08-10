@@ -14,14 +14,17 @@ def populate():
 
     add_page(cat=python_cat,
         title="Official Python Tutorial",
+        views=120,
         url="http://docs.python.org/2/tutorial/")
 
     add_page(cat=python_cat,
         title="How to Think like a Computer Scientist",
+        views=29,
         url="http://www.greenteapress.com/thinkpython/")
 
     add_page(cat=python_cat,
         title="Learn Python in 10 Minutes",
+        views=102,
         url="http://www.korokithakis.net/tutorials/python/")
 
     django_cat = add_cat(name="Django",
@@ -30,14 +33,17 @@ def populate():
 
     add_page(cat=django_cat,
         title="Official Django Tutorial",
+        views=22,
         url="https://docs.djangoproject.com/en/1.5/intro/tutorial01/")
 
     add_page(cat=django_cat,
         title="Django Rocks",
+        views=12,
         url="http://www.djangorocks.com/")
 
     add_page(cat=django_cat,
         title="How to Tango with Django",
+        views=35,
         url="http://www.tangowithdjango.com/")
 
     frame_cat = add_cat(name="Other Frameworks",
@@ -46,10 +52,12 @@ def populate():
 
     add_page(cat=frame_cat,
         title="Bottle",
+        views=8,
         url="http://bottlepy.org/docs/dev/")
 
     add_page(cat=frame_cat,
         title="Flask",
+        views=4,
         url="http://flask.pocoo.org")
 
     # Print out what we have added to the user.
