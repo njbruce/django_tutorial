@@ -1,19 +1,13 @@
-<!DOCTYPE html>
- 
-{% load staticfiles %} 
+{% extends 'base.html' %}
 
-<html>
+{% load staticfiles %}
 
-    <head>
-        <title>Rango</title>
-    </head>
+{% block title %}About{% endblock %}
 
-    <body>
-        <h1>Rango says...</h1>
-        This is a page about <strong>{{ boldmessage }}</strong><br /><br />
-        To return to index click <a href="/rango/">here</a><br /><br />
-        <img src="/media/sda7_logo.jpg" alt="SDA picture" /> <!-- New line -->
-    </body>
+{% block body_block %}
+    <h1>Rango says...</h1>
+    This is a page about <strong>{{ boldmessage }}</strong><br /><br />
+    <img src="/media/sda7_logo.jpg" alt="SDA picture" /> <!-- New line -->
+ {% endblock %}
 
-</html>
 

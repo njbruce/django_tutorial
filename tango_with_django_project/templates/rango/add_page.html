@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rango</title>
-    </head>
+{% extends 'base.html' %}
 
-    <body>
-        
-       
+{% load staticfiles %}
+
+{% block title %}Add a page to {{ category }}{% endblock %}
+
+{% block body_block %}
        {% if category %}
             <h1>Add a page to {{ category }}</h1>
             <form id="page_form" method="post" action="/rango/category/{{ category_name_slug }}/add_page/">
@@ -30,6 +28,4 @@
             <br/>
             Return to <a href=/rango/> index page</a>
         {% endif %}
-    </body>
-
-</html>
+{% endblock %}
