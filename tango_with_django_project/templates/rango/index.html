@@ -26,8 +26,8 @@
         {% if user.is_authenticated %}
             <a href="{% url 'add_category' %}">Add a New Category</a><br />
         {% else %}
-            Please <a href="{% url 'login' %}">login</a> or 
-            <a href="{% url 'register' %}">register</a> to add new categories<br/>
+            Please <a href="{% url 'auth_login' %}">login</a> or 
+            <a href="{% url 'registration_register' %}">register</a> to add new categories<br/>
         {% endif %}
         <br/>
         <h2> View our top pages </h2>
